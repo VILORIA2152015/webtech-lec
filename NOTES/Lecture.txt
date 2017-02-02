@@ -1,0 +1,31 @@
+*Internet 
+  - internetwork
+  -established 1969
+  -only the backbone and applications are created to access a more user
+    friendly environment
+
+<----HARDWARE:----->    
+*nodes
+  -devices connected to he network
+  
+<----SOFTWARE:---->
+*protocol
+  -how to send data device drivers; organize the time of transfer
+  
+
+<----1989---->
+*Sir Tim Burners-Lee
+  -European research center for nuclear
+  -Established www on 1989
+  -Scientist & Mathematician
+  
+*HTML,URL
+
+*Web Server
+  -program that provides services as user requested
+  -listen to request for services
+  
+*Web Client
+  -web browser
+  -contacts server
+  -used to request services to the server
