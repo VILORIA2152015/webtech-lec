@@ -1,0 +1,26 @@
+HTTP Message  - in the header section
+              - request and reponse messages in the HTTP.
+   General Header Fields
+   Request Header Fields
+   Response Header Fields
+   Entity Header Fields
+
+HTTP Response
+   Status ling (CRLF-terminated line)
+   HTTP Protocol Version
+   Status Code
+   Reason Phase
+
+HTTP Status Codes
+   Informational  1XX
+   Success        2XX
+   Redirection    3XX
+   Client Error   4XX
+   Server Error   5XX
+
+example:
+
+ 404 NOT FOUND
+
+404- Status code
+Note Found - reason
