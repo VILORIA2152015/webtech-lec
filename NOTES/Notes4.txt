@@ -1,0 +1,51 @@
+=======================================================================
+HTTP REQUEST MESSAGE ("CLIENT")
+REQUEST LINE
+	-METHOD
+	-REQUEST URI
+	-HTTP PROTOCOL
+MESSAGE HEADERS ( General, request, and/or entity headers)
+	-HTTP 1.1
+EMPTY LINE(CRLF)
+MESSAGE BODY, payload(optional)
+========================================================================
+HTTP RESPONSE MESSAGE ("SERVER")
+Status Line
+	HTTP Protocol version
+	Status code ( 5 status code) ( 3 digit)
+	Reason Phrase (e.g "not found")
+Message Headers (general, resoponse and or entity headers)
+Empty Line CRLF
+Message Body Optional
+=========================================================================
+1. Get
+2.Head
+3.Post
+4.Put
+5.Delete
+6.Options
+7.Trace
+8.Connect
+=========================================================================
+Safe Methods: GET HEAD OPTIONS TRACE
+
+Idempotent: GET HEAD PUT DELETE OPTION TRACE
+
+Cacheable method
+=========================================================================
+HTTP MESSAGE HEADER
+Generate header fileds
+	cache control
+	connection
+	date
+	pragma
+	trailer
+	transfer encoding
+	upgrade
+	via
+Request Header fields
+
+Response header Fields
+
+Entity Header Fields
+==========================================================================
