@@ -1,0 +1,72 @@
+Response Header Field
+-Accept Ranges: allows partial e.g Accept ranges: bytes
+-Age: used for cache control.
+-Etag: size of resource and time stamp
+-Location: redirection
+-Proxy Authenticate
+-Retry-After: returns service error
+-Server: info about the server(does not require header)
+-Vary: indicates value
+-WWW Authenticate
+
+Entity Header Field
+-Allow: methods can call from entity content encoding
+-Content-Language: accessibility perspective
+-Content Length
+-Content-Location
+-Content MD5: hashing algorithm (depricated header)
+-Content-Range: range request
+-Content Type: e.g (text/plain, application/javascript)
+-Expires: controlling cache access
+-Last-Modified
+
+HHTP Status Codes
+.Informational(1xx)
+  -100 Continue
+  -101 Switching Protocol
+.Success(2xx)
+  -200 ok
+  -201 Created
+  -203 Non-Authoritative Information
+  -204 No Content
+  -205 ResetContent
+  -206 Partial Content
+  
+.Redirection(3xx)
+  -300 Multiple Choice
+  -301 Moved Permanently
+  -302 Found
+  -303 See other
+  -304 Not Modified
+  -305 Use Proxy
+  -306 (unused) removed in http 1.1
+  -307 Temporary Redirect
+  
+.Client Error
+  -400 Bad Request
+  -401 Unauthorized
+  -402 Payment Required
+  -403 Forbidden
+  -404 Not Found
+  -405 Method not allowed
+  -406 Not acceptable
+  -407 Proxy Authorization Required
+  -408 Request Time-Out
+  -409 Conflict
+  -410 Gone
+  -411 Length Required
+  -412 Precondition Failed
+  -413 Request Entity too Large
+  -414 Request URI too large
+  -415 Unsupported Media Type
+  -416 Requested Range not Satisfiable
+  -417 Expectation Failed
+  -426 Upgrade Required
+  
+.Server Error
+  -500 Internal Server Error
+  -501 Not Implemented
+  -502 Bad Gateway
+  -503 Service Unavailable
+  -504 Gateway Time-Out
+  -505 HTTP version not supported
