@@ -1,3 +1,27 @@
+Website - collection of web resources
+
+HTML - Hypertext Mark up Language
+	- marks up structure and content
+	- Tim Berners Lee (1989)
+	- 5.1 (current)
+	- HTML 2.0 RFC 1866
+
+W3C - Tim Berners Lee
+	- HTML 3 -> 3.2
+	- HTML 4, 4.1 (1997, 1999)
+	- XHMTL (2000) Jan 26
+	
+Ian Hickson - WHATWG
+	- HTML 5 (2014) RFC 7230
+
+HTML 4.01 DOCTYPE 
+	- Transition - with depricated codes
+	- Strict - everything structure + content without depricated codes
+
+Chrome Vox
+
+
+
 *HTML Elements
 
 html
