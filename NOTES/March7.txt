@@ -50,3 +50,23 @@ CSS Selectors
 		-class selector
 		-ID selector
 		-pseudo-class
+		
+CSS - visual + oral formatting
+Media Queries - responsiveness
+At-Rules
+
+	- @charset
+	- @import
+	- @namespace
+	- @document
+	- @font-face
+	- @key-frames
+	- @media
+	- @page
+	etc.
+
+dir#abc>p.xyz[title]+span:last-of-type::after
+
+> and + combinators
+
+after - pseudo
