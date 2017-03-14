@@ -1,0 +1,53 @@
+Simple Selectors
+  -type selector
+  -universal selector
+  -attribute selector
+  -class selector
+  -id selector
+  -pseudo class
+      -dynamic
+        link pseudo class
+          -link
+          -visited
+        user action pseudo class
+          :hover
+          :active
+          :focus
+          
+      -target
+          :target
+      -language
+          :lang()
+      -UI element states pseudo classes
+          :enabled
+          :disabled
+          :checked
+          :indeterminate
+      -structural
+          :root
+          :first-child
+          :last-child
+          :only-child
+          :nth-child
+          :nth-last-child
+          :first-of-type
+          :last-of-type
+          :only-of-type
+          :nth-of-type
+          :nth-last-of-type
+          :empty
+      -negation pseudo class
+          :not
+      -combinators
+          -descendant combinator (whitespace, ie, space, tab, line feed, carriage return, form feed)
+          -child combinator (>)
+          -sibling combinators
+              - adjacent (+)
+              - general (~)
+      -pseudo element
+          ::first-letter
+          ::first-line
+          ::before
+          ::after
+         
+      
