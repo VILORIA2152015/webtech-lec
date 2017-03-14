@@ -1,3 +1,53 @@
+=====================================================================
+HTTP INTRODUCTION
+
+HTTP (Hypertext Transfer Protocol) - underlying protocol used by the World Wide Web and this protocol defineshow messages are formatted and transmitted.
+
+W3C - World Wide Web Consortium
+IETF- Internet Engineering Task Force
+
+HTTP 0.9 (1991) - The standard HTTP
+HTTP 1.0 (RFC 1945, 1996)
+HTTP 1.1 (RFC 2068 Jan 1999, RFC 2616 Jun 1999), RFC 7230-7235 (Jun 2014)
+HTTP 2 (RFC 7540 May 2015)
+
+HTTP - higher level protocol
+     - port 80 (default)
+     - internal communication
+     - digital certificates used in encrypting informations
+
+"encrypts" - algorithm; transform a data to another data with the same content.
+
+Socket - IP address and port number
+Port numbers are from 0-64K
+
+Origin server - physical web servers with different resources
+	      - machine with an application running
+
+Proxy server - intermediate machine; for authentication
+
+Gateway - ISP (Internet service provider)
+
+Request response chain -  no direct communication
+Encryption tunnel - allows HTTP traffic to pass through.
+
+"pull" - client -> http request message -> server -> http response message -> client
+	    
+
+"push" - allows a web server to send resources to a web browser before the browser gets to request them.
+
+"polling" - is the continuous checking of other programs or devices by one progam or device to see what state they are in, usually to see whether they are still connected or want to communicate.
+
+Stateless - servers do not keep information about clients in-between requests.
+
+Cache control - restores certain things on the storage location
+
+Content media type (MIME) specification
+MIME - Multipurpose Internet Mail Extensions (e.g. text/html, img/png)
+
+====================================================================================
+
+
 HTTP Message  - in the header section
               - request and reponse messages in the HTTP.
    General Header Fields
