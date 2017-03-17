@@ -1,0 +1,133 @@
+THE INTERNET AND WORLD WIDE WEB
+
+INTERNET
+  Internetwork is the interconnection of computers globally that makes them communicate. In the internet, information are able to travel through protocols - rule or the agreed format that is used to transmit data.
+
+World Wide Web
+   The World Wide Web is invented primarily on information sharing between scientists in the 1989 by Sir Tim Berners Lee and considered as the father of the World Wide Web . The WWW is a large web resource where people can access through internet and is identified by a URL(Uniform Resource Locator) e.g http://www.microsoft.com.
+
+=========================================================================
+HTTP (HyperText Transfer Protocol)
+ Hypertext transfer protocol is an application protocol. It is the protocol used by the World Wide Web. The protocol defines how messages are formatted and transmitted and what are the proper actions of Web servers and browsers should do with regards to the commands. HTTP runs on top of TCP/IP using RP port 80 by default or TCP port 80 by default or TCP port 443 for HTTPS(HTTP over SSC/RS) and is based on a client server architecture. HTTP uses a request-response standard protocol - client(browsers, robots and search engines) sends an HTTP request message to the server and the server(Web server) processes the request and replies with an HTTP response message.  It is also considered as stateless communications protocol because servers dont keep information about clients in between requests. HTTP provides support for other functionalities such as: cache control, content media type(MIME) specification, language and character set specification, content/transfer codings, content negotiation and client server protocol negotiations
+
+HTTP VERSIONS
+        -HTTP 0.9(1991)
+	-HTTP 1.0(RFC 1945, May 1996)
+	-HTTP 1.1(RFC 2068, Jan 1997)
+		 (RFC 2616, Jun 1999)
+		 (RFC 7230-7235, Jun 2014)
+	-HTTP 2.0(RFC 7450, May 2015)
+
+CLIENT
+	Clients sends request to the server in the form of a request method.
+SERVER
+        The server is the one who will accept and will response to the client. It responds with a status line, including the message's protocol version and a success or error code.
+
+===========================================================================
+MESSAGES
+       These are HTTP requests and responses.
+
+
+MESSAGE BODY
+       It carries the HTTP request data or the HTTP response data.
+
+HEADER FIELDS
+	General-header: applicable for both request and response messages. 
+	Request-header: applicable only for request messages. 
+	Response-header: applicable only for response messages.
+                         -Accept Ranges: allows partial e.g Accept ranges: bytes
+                         -Age: used for cache control.
+                         -Etag: size of resource and time stamp
+                         -Location: redirection
+                         -Proxy Authenticate
+                         -Retry-After: returns service error
+                         -Server: info about the server(does not require header)
+                         -Vary: indicates value
+                         -WWW Authenticate
+        Entity-header:  defines meta-information about the entity-body or about the resource identified by the request.
+                        -Allow: methods can call from entity content encoding
+                        -Content-Language: accessibility perspective
+                        -Content Length
+                        -Content-Location
+                        -Content MD5: hashing algorithm (deprecated header)
+                        -Content-Range: range request
+                        -Content Type: e.g (text/plain, application/javascript)
+                        -Expires: controlling cache access
+                        -Last-Modified 
+===========================================================================
+HTTP REQUEST MESSAGE 
+REQUEST LINE
+  *REQUEST METHOD - it indicates the method to be performend and it is always in uppercase
+     GET 
+     HEAD 
+     POST 
+     PUT 
+     DELETE  
+     CONNECT 
+     OPTIONS 
+     TRACE 
+  *REQUEST URI
+  *HTTP PROTOCOL
+  *MESSAGE HEADERS ( General, request, and/or entity headers)
+  *EMPTY LINE(CRLF)
+  *MESSAGE BODY, payload(optional)
+
+
+========================================================================
+HTTP RESPONSE MESSAGE ("SERVER")
+  *Status Line
+	HTTP Protocol version
+	Status code ( 5 status code) ( 3 digit)
+	Reason Phrase (e.g "not found")
+  *Message Headers (general, resoponse and or entity headers)
+  *Empty Line CRLF
+  *Message Body 
+
+========================================================================
+HTTP STATUS CODES
+
+  1×× Informational
+  100 Continue
+  101 Switching Protocols
+  
+  2×× Success
+  200 OK
+  201 Created
+  202 Accepted
+  203 Non-authoritative Information
+  204 No Content
+  205 Reset Content
+ 
+  3×× Redirection
+  300 Multiple Choices
+  301 Moved Permanently
+  302 Found
+  303 See Other
+  304 Not Modified
+  305 Use Proxy
+  307 Temporary Redirect
+  308 Permanent Redirect
+
+  4×× Client Error
+  400 Bad Request
+  401 Unauthorized
+  402 Payment Required
+  403 Forbidden
+  404 Not Found
+  405 Method Not Allowed
+  406 Not Acceptable
+  407 Proxy Authentication Required
+  408 Request Timeout
+  409 Conflict 
+  410 Gone
+  411 Length Required
+  412 Precondition Failed
+  413 Payload Too Large
+  414 Request-URI Too Long
+  415 Unsupported Media Type
+  416 Requested Range Not Satisfiable
+  417 Expectation Failed
+
+
+
+
