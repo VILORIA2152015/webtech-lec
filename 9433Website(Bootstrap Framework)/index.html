@@ -83,6 +83,7 @@
                   In the internet, information are able to travel through protocols - rule or the agreed format that is used to transmit data.</p>
                 <p>The World Wide Web is invented primarily on information sharing between scientists in the 1989 by Sir Tim Berners Lee and considered as the father of the World Wide Web . The WWW is a large web resource where people can access
                    through internet and is identified by a URL(Uniform Resource Locator) e.g http://www.microsoft.com.</p>
+                   
               <h1 id="http"> HTTP (Hypertext Transfer Protocol) </h1>
                 <p> Hypertext transfer protocol is an application protocol that is being used by the World Wide Web.
                   The protocol defines how messages are formatted and transmitted and what are the proper actions of Web servers and browsers should do with regards to the commands. HTTP runs on top of TCP/IP using RP port 80 by default or TCP port 80 by default or TCP port 443 for HTTPS(HTTP over SSC/RS) and is based on a client server architecture.
@@ -110,16 +111,16 @@
                         <dt>
                             <h3>General-header:</h3>
                         </dt>
-                        <dl>applicable for both request and response messages.</dl>
+                        <dd>applicable for both request and response messages.</dd>
                         <dt>
                             <h3>Request-header:</h3>
                         </dt>
-                        <dl>applicable only for request messages.</dl>
+                        <dd>applicable only for request messages.</dd>
                         <dt>
                             <h3>Response-header:</h3>
                         </dt>
-                        <dl>applicable only for response messages.
-                        
+                        <dd>applicable only for response messages.
+                            <ul>
                             <li><b>Accept Ranges:</b> allows partial e.g Accept ranges: bytes</li>
                             <li><b>Age:</b> used for cache control.</li>
                             <li><b>Etag:</b> size of resource and time stamp</li>
@@ -129,13 +130,13 @@
                             <li><b>Server:</b> info about the server(does not require header)</li>
                             <li><b>Vary</b>: indicates value</li>
                             <li><b>WWW Authenticate</b></li>
-                        
-                        </dl>
+                            </ul>
+                        </dd>
                         <dt>
                             <h3>Entity-header:</h3>
                         </dt>
-                        <dl>defines meta-information about the entity-body or about the resource identified by the request.
-                        
+                        <dd>defines meta-information about the entity-body or about the resource identified by the request.
+                        <ul>
                         <li><b>Allow:</b> methods can call from entity content encoding</li>
                         <li><b>Content-Language:</b> accessibility perspective</li>
                         <li><b>Content Length</b></li>
@@ -145,9 +146,26 @@
                         <li><b>Content Type:</b>  e.g (text/plain, application/javascript)</li>
                         <li><b>Expires:</b> controlling cache access</li>
                         <li><b>Last-Modified</b></li>
-                        
-                        </dl>
+                        </ul>
+                        </dd>
                     </dl>
+                    
+                    <h2>HTTP REQUEST MESSAGE ("Client")</h2>
+                    
+                    <ol>
+                        <li><b>REQUEST METHOD</b> - it indicates the method to be performend and it is always in uppercase
+                            
+                        </li>
+                        <li><b>REQUEST URI</b></li>
+                        <li><b>HTTP PROTOCOL</b></li>
+                        <li><b>MESSAGE HEADERS</b> ( General, request, and/or entity headers)</li>
+                        <li><b>EMPTY LINE</b>(CRLF)</li>
+                        <li><b>MESSAGE BODY, payload</b>(optional)</li>
+                    </ol>
+                    
+                    
+                    
+                    
                     
             </div>
         </div>
