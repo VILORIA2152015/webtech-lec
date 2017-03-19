@@ -18,10 +18,16 @@ HTTP VERSIONS
 		 (RFC 7230-7235, Jun 2014)
 	-HTTP 2.0(RFC 7450, May 2015)
 
+HTTP ADDRESSING
+ The Uniform Resource Locator(URL) also known as web address is used to locate a computer network to retrieve web resources. Web addresses are typically on the address bar of a web browser located at the top. URL is a type of URI (Uniform Resource Identifier).
+                HTTP Address Syntax:
+                           http : // hostname [ : port ] / path [ ? searchwords ] 
+
 CLIENT
 	Clients sends request to the server in the form of a request method.
 SERVER
         The server is the one who will accept and will response to the client. It responds with a status line, including the message's protocol version and a success or error code.
+
 
 ===========================================================================
 MESSAGES
@@ -56,21 +62,21 @@ HEADER FIELDS
                         -Last-Modified 
 ===========================================================================
 HTTP REQUEST MESSAGE 
-REQUEST LINE
-  *REQUEST METHOD - it indicates the method to be performend and it is always in uppercase
-     GET 
-     HEAD 
-     POST 
-     PUT 
-     DELETE  
-     CONNECT 
-     OPTIONS 
-     TRACE 
-  *REQUEST URI
+REQUEST LINE - it begins with a method token, Request-URI and the protocol version, and ends with a CRLF
+ REQUEST METHOD - it indicates the method to be performend and it is always in uppercase
+     GET - it retrieves data and should not affect the data when retrieving it
+     HEAD - transfers the status line and the header section
+     POST - it used to send data to the server
+     PUT - replaces the representations of the target resource with the uploaded content
+     DELETE - removes the representations of the target resource given by URI 
+     CONNECT - establish a tunnel to the server
+     OPTIONS - describe the communication options for the target resource
+     TRACE - performs a message loopback
+ REQUEST URI
   *HTTP PROTOCOL
-  *MESSAGE HEADERS ( General, request, and/or entity headers)
-  *EMPTY LINE(CRLF)
-  *MESSAGE BODY, payload(optional)
+ MESSAGE HEADERS ( General, request, and/or entity headers)
+ EMPTY LINE(CRLF)
+ MESSAGE BODY, payload(optional)
 
 
 ========================================================================
@@ -86,11 +92,11 @@ HTTP RESPONSE MESSAGE ("SERVER")
 ========================================================================
 HTTP STATUS CODES
 
-  1×× Informational
+  1Ã—Ã— Informational
   100 Continue
   101 Switching Protocols
   
-  2×× Success
+  2Ã—Ã— Success
   200 OK
   201 Created
   202 Accepted
@@ -98,7 +104,7 @@ HTTP STATUS CODES
   204 No Content
   205 Reset Content
  
-  3×× Redirection
+  3Ã—Ã— Redirection
   300 Multiple Choices
   301 Moved Permanently
   302 Found
@@ -108,7 +114,7 @@ HTTP STATUS CODES
   307 Temporary Redirect
   308 Permanent Redirect
 
-  4×× Client Error
+  4Ã—Ã— Client Error
   400 Bad Request
   401 Unauthorized
   402 Payment Required
