@@ -198,3 +198,35 @@ footer p {
         clear: both;
     }
 }
+
+#xx1{
+    display:none;
+}
+#xx1:target{
+    display:block;
+    position:;
+}
+#xx2{
+ display:none;
+}
+#xx2:target{
+    display:block;
+}
+#xx3{
+ display:none;
+}
+#xx3:target{
+    display:block;
+}
+#xx4{
+ display:none;
+}
+#xx4:target{
+    display:block;
+}
+#xx5{
+ display:none;
+}
+#xx5:target{
+    display:block;
+}
