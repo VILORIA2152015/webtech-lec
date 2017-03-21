@@ -33,7 +33,7 @@
 <body>
 
     <div class="brand">WEB SYSTEMS AND TECHNOLOGIES</div>
-    <div class="address-bar">9433A 11:30 - 10:30 TF</div>
+    <div class="address-bar">9433A 11:30 - 12:30 TF</div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
@@ -73,9 +73,7 @@
                     <p>The World Wide Web is invented primarily on information sharing between scientists in the year of 1989 by Sir Tim Berners Lee and considered as the father of the World Wide Web .The World Wide Web's three fundamental technologies, the HyperText Markup Language(HTML), the Uniform Resource Identifier (URI) and the Hypertext Transfer Protocol.The WWW is a large web resource where people can access through internet and is identified by a URL(Uniform Resource Locator) e.g http://www.microsoft.com.</p>
                     <h1 class="text-center">World Wide Web vs Internet</h1>
                     <hr>
-                    <p>Internet is the interconnection of computers globally that makes them communicate. In the internet, information are able to travel through protocols - rule or the agreed format that is used to transmit data.<br>
-                       The World Wide Web, or simply the web is on "top" of the internet which means, the web needs the internet to be useful or to work. The web is composed of web pages which contains text, audio clip, pictures, or videos.
-                       Web pages also contains hyperlinks or links which enable users to jump over another web page.</p>
+                    <p>Internet is the interconnection of computers globally that makes them communicate. In the internet, information are able to travel through protocols - rule or the agreed format that is used to transmit data.<br> The World Wide Web, or simply the web is on "top" of the internet which means, the web needs the internet to be useful or to work. The web is composed of web pages which contains text, audio clip, pictures, or videos. Web pages also contains hyperlinks or links which enable users to jump over another web page.</p>
                 </div>
             </div>
         </div>
@@ -141,72 +139,76 @@
             <div class="box">
                 <div class="col-lg-12">
                     <h2 class="text-center">HTTP Message Header Fields</h2>
-                    <p>
-                       <strong>General-header field</strong> is applicable for both request and response messages.
-                        <br>
-                        <ul>
-                            <li>Cache-control</li>
-                            <li>Connection</li>
-                            <li>Date</li>
-                            <li>Via</li>
-                            <li>Warning</li>
-                            <li>Pragma</li>
-                            <li>Trailer</li>
-                            <li>Transfer-encoding</li>
-                            <li>Upgrade(protocol negotiation)</li>
-                        </ul>
 
-                        <strong>Request-header field</strong> is applicable only for request messages.
-                        <br>
-                        <ul>
-                            <li>Accept-encoding</li>
-                            <li>Accept-charset</li>
-                            <li>Accept-language</li>
-                            <li>Authorization: protects resources</li>
-                            <li>Expect</li>
-                            <li>Host</li>
-                            <li>From</li>
-                            <li>Host</li>
-                            <li>If-Modified-Since</li>
-                            <li>If-Match</li>
-                            <li>If None-Match</li>
-                            <li>If-Unmodified-Since</li>
-                            <li>Max-forward</li>
-                            <li>Proxy-Authorization</li>
-                            <li>Range</li>
-                            <li>If Range</li>
-                            <li>Referer</li>
-                            <li>User-Agent</li>
-                        </ul>
+                    <ul>
+                        <li><a href=#xx6>General-header field</a> is applicable for both request and response messages. </li> 
+                        <li id=xx6>
+                            <ul>
+                                <li>Cache-control</li>
+                                <li>Connection</li>
+                                <li>Date</li>
+                                <li>Via</li>
+                                <li>Warning</li>
+                                <li>Pragma</li>
+                                <li>Trailer</li>
+                                <li>Transfer-encoding</li>
+                                <li>Upgrade(protocol negotiation)</li>
+                            </ul>
+                        </li>
+                        <li><a href=#xx7>Request-header field</a> is applicable only for request messages. </li>
+                        <li id=xx7>
+                            <ul>
+                                <li>Accept-encoding</li>
+                                <li>Accept-charset</li>
+                                <li>Accept-language</li>
+                                <li>Authorization: protects resources</li>
+                                <li>Expect</li>
+                                <li>Host</li>
+                                <li>From</li>
+                                <li>Host</li>
+                                <li>If-Modified-Since</li>
+                                <li>If-Match</li>
+                                <li>If None-Match</li>
+                                <li>If-Unmodified-Since</li>
+                                <li>Max-forward</li>
+                                <li>Proxy-Authorization</li>
+                                <li>Range</li>
+                                <li>If Range</li>
+                                <li>Referer</li>
+                                <li>User-Agent</li>
+                            </ul>
+                        </li>
+                        <li><a href="#xx8">Response-header field</a> is applicable only for response messages. </li>
+                        <li id=xx8>
+                            <ul>
+                                <li>Accept Ranges: allows partial e.g Accept ranges: bytes</li>
+                                <li>Age: used for cache control.</li>
+                                <li>Etag: size of resource and time stamp</li>
+                                <li>Location: redirection</li>
+                                <li>Proxy Authenticate</li>
+                                <li>Retry-After: returns service error</li>
+                                <li>Server: info about the server(does not require header)</li>
+                                <li>Vary: indicates value</li>
+                                <li>WWW Authenticate</li>
+                            </ul>
+                        </li>
+                        <li><a href="#xx9">Entity-header field</a> defines meta-information about the entity-body or about the resource identified by the request.</li>
+                        <li id=xx9>
+                            <ul>
+                                <li>Allow: methods can call from entity content encoding</li>
+                                <li>Content-Language: accessibility perspective</li>
+                                <li>Content Length</li>
+                                <li>Content-Location</li>
+                                <li>Content MD5: hashing algorithm (deprecated header)</li>
+                                <li>Content-Range: range request</li>
+                                <li>Content Type: e.g (text/plain, application/javascript)</li>
+                                <li>Expires: controlling cache access</li>
+                                <li>Last-Modified </li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
 
-                        <strong>Response-header field</strong> is applicable only for response messages.
-                        <br>
-                        <ul>
-                            <li>Accept Ranges: allows partial e.g Accept ranges: bytes</li>
-                            <li>Age: used for cache control.</li>
-                            <li>Etag: size of resource and time stamp</li>
-                            <li>Location: redirection</li>
-                            <li>Proxy Authenticate</li>
-                            <li>Retry-After: returns service error</li>
-                            <li>Server: info about the server(does not require header)</li>
-                            <li>Vary: indicates value</li>
-                            <li>WWW Authenticate</li>
-                        </ul>
-                    </p>
-                    <p>
-                        <strong>Entity-header field</strong> defines meta-information about the entity-body or about the resource identified by the request.
-                        <ul>
-                            <li>Allow: methods can call from entity content encoding</li>
-                            <li>Content-Language: accessibility perspective</li>
-                            <li>Content Length</li>
-                            <li>Content-Location</li>
-                            <li>Content MD5: hashing algorithm (deprecated header)</li>
-                            <li>Content-Range: range request</li>
-                            <li>Content Type: e.g (text/plain, application/javascript)</li>
-                            <li>Expires: controlling cache access</li>
-                            <li>Last-Modified </li>
-                        </ul>
-                    </p>
                 </div>
             </div>
         </div>
@@ -229,7 +231,7 @@
                     <div class="container text-center example">
                         <h3>Example of an http Request message</h3>
                         <p class="lead">
-                           GET /_/chrome/newtab-serviceworker.js HTTP/1.1
+                            GET /_/chrome/newtab-serviceworker.js HTTP/1.1
                             <br> User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36
                             <br> Accept-Language: en-US,en;q=0.8
                             <br> Accept-Encoding: gzip, deflate, sdch, br
@@ -257,7 +259,7 @@
                     <div class="container text-center example">
                         <h3>Example of an http Response message</h3>
                         <p class="lead">
-                           HTTP/1.1 200 OK
+                            HTTP/1.1 200 OK
                             <br> Cache-Control: no-cache, must-revalidate
                             <br> Date: Mon, 20 Mar 2017 14:54:49 GMT
                             <br> Expires: -1
@@ -378,35 +380,31 @@
                 </div>
             </div>
         </div>
-
-
-
     </div>
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p class="text-center">Copyright</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Script to Activate the Carousel -->
-    <script>
-        $('.carousel').carousel({
-            interval: 5000 //changes the speed
-        })
-    </script>
-
-
 </body>
 
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <p class="text-center">Copyright</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Script to Activate the Carousel -->
+<script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+
+</script>
 
 </html>
