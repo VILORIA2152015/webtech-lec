@@ -1,0 +1,112 @@
+Website - collection of web resources
+
+HTML - Hypertext Mark up Language
+	- marks up structure and content
+	- Tim Berners Lee (1989)
+	- 5.1 (current)
+	- HTML 2.0 RFC 1866
+
+W3C - Tim Berners Lee
+	- HTML 3 -> 3.2
+	- HTML 4, 4.1 (1997, 1999)
+	- XHMTL (2000) Jan 26
+	
+Ian Hickson - WHATWG
+	- HTML 5 (2014) RFC 7230
+
+HTML 4.01 DOCTYPE 
+	- Transition - with depricated codes
+	- Strict - everything structure + content without depricated codes
+
+Chrome Vox
+
+
+
+*HTML Elements
+
+html
+    head
+	title, base, link, meta, style
+    body
+	article, aside, nav, section
+	header, footer
+	main
+	address
+	div
+
+	h1, h2, h3, h4, h5, h6
+
+	p
+	hr
+	pre
+	blockquote
+
+	ol, ul
+	    li
+	dl
+	    dt, dd
+
+	figure
+	     figcaption
+
+	a
+	em, strong, small, s
+	cite, q
+	dfn, abbr
+	ruby, rb, rt, rtc, rp
+	data, time
+	code, var, samp, kbd
+	sup, sub
+	i, b, u, mark
+	bdi, bdo
+	span
+	br, wbr
+	ins, del
+
+	table
+	    caption
+	    colgroup, col
+	    thead, tbody, tfoot
+		tr
+		    th, td
+
+	form
+	   label
+	   input
+	   button
+	   select, datalist
+	       optgroup, option
+	   textarea
+	   output
+	   progress, meter
+	   fieldset
+	       legend
+
+
+    details, summary
+    menu, menuitem
+
+    picture
+    img
+    iframe
+    embed
+    object
+         param
+    audio, video
+        source, track
+    map
+        area
+    math
+    svg
+    canvas
+
+    script, noscript
+    template
+
+
+
+*HTML Attributes
+	Global Attributes
+	Element-Specific Attributes
+	data-* Attributes
+	role, aria-* Attributes 

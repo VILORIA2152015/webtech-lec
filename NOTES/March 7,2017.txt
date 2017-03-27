@@ -1,0 +1,72 @@
+CSS(Cascading Style Sheets)
+-language used to specify the presentational aspects (e.g. layout and formatting of structurally marked up documents)
+-developed by Hakon Wium Lie (CHSS) and Bert Bos (SSP)
+-versions:
+          CSS 1
+          CSS 2.1
+          CSS 3
+
+CSS Preprocessors, CSS Frameworks
+-Sass, less, 960 grid system, Bootstrap, Foundation, Materialize, etc.
+
+
+HTML/XTML stylesheets
+-author styles
+	-external stylesheets
+	-embedded styles
+	-inline styles
+-user style
+-user agent styles (Example default CSS 2.1 stylesheet for HTML4)
+
+
+
+
+
+
+CSS Rule Sets (a.k.a. CSS Rules, Style Rules)
+-consists of a selector, followed by a brace-enclosed declaration block, which contains zero or more semi-colon (;)
+ sepereted property declarations, which in turn consists of a property name, followed by a colon (:), followed by a property value
+
+
+CSS Selectors
+-selector
+ 	-used as a condition in a CSS rule to determine which elements in the document tree are matched by the selector
+	 and are thus targeted by the formatting specified in the CSS rule declaration block
+	-the matched elements are called the subjects of the selector
+
+-selector syntax
+	-chain of one or more sequences of simple selectors seperated by combinators, with one pseudo-element possible appended
+	 to the last sequence
+	-sequence of simple selectors
+		-chain of simple selectors not seperated by combinators
+		-always starts with a type selector or a universal selector
+		-cannot contain other type selectors or universal selectors
+	-group of selectors
+		-comma-seperated list of selectors representing the union of all elements selected by each of the selectors in the list
+	-simple selectors
+		-type selector
+		-universal selector
+		-attribute selector
+		-class selector
+		-ID selector
+		-pseudo-class
+		
+CSS - visual + oral formatting
+Media Queries - responsiveness
+At-Rules
+
+	- @charset
+	- @import
+	- @namespace
+	- @document
+	- @font-face
+	- @key-frames
+	- @media
+	- @page
+	etc.
+
+dir#abc>p.xyz[title]+span:last-of-type::after
+
+> and + combinators
+
+after - pseudo

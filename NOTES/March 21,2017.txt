@@ -1,0 +1,92 @@
+===Javascript===
+	Client side scripting- which is to be associated with web
+pages. The execution environment is the browser environment, it is by 
+by far the most used client side scripting
+
+Standard for JAVASCRIPT is ECMA=262
+
+Link it to HTML in 3 ways
+1. Link to an external file
+2.Embed the script within the HTML
+3.Inline script 
+
+*It is preferred to use Link method to save space on the HTML 
+
+===HOW IT WORKS/ HOW IT GETS EXECUTED===
+	The broser parse from the top, when it encounters a link(script)
+it loads and executes the script.
+
+===ATTRIBUTES===
+	deffer - attribute makes it possible for the script to load
+while the HTML is loading. script is to be executed only after the document
+is loaded.
+	async - attribute makes it possible for the script to load while
+the html is loading. script is loaded and executed even if the document is not
+yet loaded
+
+*NOTE: positioning is important without the attributes defer and async*
+
+====EXECUTION ENVIRONMENT===
+ Window object is the global object
+ window.navigator - is the browser itself
+ window.scree - gets information about the screen
+ window.document is the HTML document
+
+"window" is not required since it is the global object"
+	Example: "window.document.write" maybe written as
+		 "document.write"
+
+===innerText vs innerHTML===
+Innertext ignores markup and treats it as literal values
+InnerHTML will interpret any markup
+text content interprets it as a literal value
+
+--OuterHTML includes the markup while innerHTML is just the content--
+OuterHTML = <p>hello<p>
+InnerHTML = hello
+
+===Attributes can also be set in javascript===
+h.title = "hello"
+h.setAttribute('data-extra' 'value')
+		where 'data-extra' = name of attribute and 'value' is the value
+
+===Styles can also be set===
+h.style.color = ="red"
+h.style.fontSize = '2cm'
+
+*NOTE that the values should be string*
+*NOTE (-) dash is an invalid  key character in javascript
+	and h.style.font-size will be invalid
+
+More powerful css selector
+"document.querySelector('p')"
+"document.querySelectorAll('p:first-child')
+
+<noscript>lorem</noscript>
+	The browser may not be able to support scripts
+	The text on the no script tag will pop if the browser does not support 
+for script( javascript)
+	
+	Scripts may contain harmful or malicious contents that is why
+the browser is a way to transfer malicious files. when executing in a browser
+it executes in a SANDBOX
+
+*NOTE THAT ALL WHITE SPACE ARE SIGNIFICANT*
+
+DOM (Document Object Model)
+Defines the structure of markup
+
+Node interface - is the primary datatype for the entire DOM
+
+Node.name ="#this contains text"
+NodeType = returns if what type of node 
+NodeValue = is always "null"
+
+*NOTE in javascript quoting ' with " is valid
+
+createElement('h1')
+
+
+
+
+
