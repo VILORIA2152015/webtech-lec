@@ -1,0 +1,33 @@
+JavaScript - Imperative Programming Language
+           - Weakly Type, dynamically type language
+document - API of browser environment
+Declaring Variables
+var
+let - not associated in global. Available only for specific block
+const - same as let, cannot reassign variable in a different value, constant value.
+
+Simple/Primitive Types
+-boolean = true & false
+-numbers
+-Strings - '' , ""
+
+examples:
+
+var matrix = [
+             ['a','b','c'],
+             [4,5,6, [true, false], 7, 8],
+             []
+];
+
+var array = [1,2,3,4,5];
+var [a,b,c,d,e] = array;
+var [m,n, ...others] = array;
+var [, x, , y] = array;
+
+// counts only the index that has values
+
+var array = [1,2,3,4,5] 
+array[10] = 10;
+for (let i in array) {
+  // 0, 1, 2, 3, 4, 10
+}
