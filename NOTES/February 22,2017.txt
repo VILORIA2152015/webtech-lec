@@ -13,21 +13,18 @@ HTML-Hypertext Markup Language
 Web page
 -Structure and content
 -Presentational/aesthetic
-
-<body bgcolor = ""> -deprecated
-<font face = ""> -deprecated
-
-HTML History
--Created by Tim Berners Lee
--Latest HTML 5.1-November 1, 2016
--HTML 5.2 developing
-
-First specification that they wrote HTML 3.0
-
+--------------------------------------*
+Some HTML Deprecated Tags
+<body bgcolor = ""> 
+<font face = ""> 
+<applet>
+<basefont>
+<center>
+<dir>
+<font>
+--------------------------------------------*
 XHTML
--Extensive Hypertext Markup Language
--Text based
--Rules are strict
-
+  Extensible Hypertext Markup Language(XHTML) is the product of redevelopment of HTML 4. The document type of the XHTML are in  Extensible Markup Language (XML) - used for the transport and storage of the data and is a language that is human and machine readable. 
+-------------------------------------------*
 Browsers
 -Sandbox environment
