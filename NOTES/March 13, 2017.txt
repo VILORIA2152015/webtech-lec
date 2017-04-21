@@ -1,3 +1,8 @@
+Cascading Style Sheets (CSS)
+    If HTML is the one to use when creating the structure and the content of a web page, CSS or Cascading Style Sheet is the one who is responsible for the look or the design of the web page.
+
+
+
 CSS Rule Precedence
 -by origin and importance
     -user agent important declaration
@@ -17,9 +22,15 @@ CSS Rule Precedence
 -by order
 
 CSS Declarations
+    A declaration consists of a property name and a value. It appears inside a declation block.
+    e.g
+    h1{
+        font-size: 36px;
+    }
 -properties
     -short hand properties
-    -vendor specific extension(a.k.a vendor prefix e.g. -webkit- .....)
+    -vendor specific extension - it used by the browsers to add support for some CSS features
+    (a.k.a vendor prefix e.g. -webkit- .....)
     
 -values
     -keywords
