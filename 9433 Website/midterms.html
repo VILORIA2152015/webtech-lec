@@ -109,7 +109,66 @@
             <div class="box">
                 <div class="col-lg-12">
                     <h1 class="text-center">Javascript</h1>
-                    <h1 class="text-center">insert javascript topic here</h1>
+                    <h2>Client Side Scripting</h2>
+                    <p>client side scripting, which is to be associated with web pages. The execution environment is the browser environment, Javascript is by far the most used client side scripting</p>
+                    <hr>
+                    <h2 class="text-center">ECMA 2612</h2>
+                    <p class="text-center">standard for Javascript</p>
+                    <hr>
+                    <h2 >Link Javascript to HTML in 3 Ways</h2>
+                    <ol>
+                        <li>Link to an external file</li>
+                        <li>Embed the script within the HTML</li>
+                        <li>Inline script</li>
+                    </ol>
+                    <p>*Advisable to use the link method to save space on the HTML</p>
+                    <h3>How It works/ How it gets executed</h3>
+                    <p>The browser parse from theop, when it encounters a script(link) it loads and executes the script</p>
+                    <h3>Attributes</h3>
+                    <ul>
+                        <li>DEFFER- attribute makes it possible for the script to load while the html is loading. script is to be executed only after the document is loaded</li>
+                        <li>ASNYC-makes it possible for the script to load while the HTML is loading. script is loaded and executed even if the document is not yet loaded</li>
+                    </ul>
+                    <p>*NOTE: positioning of a script is important if not using the attributes deffer and async</p>
+                    <h3>Environment</h3>
+                    <ul>
+                        <li>Window Object - is the global Object</li>
+                        <li>Window.Navigator - is the browser itself</li>
+                        <li>Window.screen - gets information about the screen</li>
+                        <li>window.document - is the HTML</li>
+                    
+                    </ul>
+                    <p>*NOTE: The Window keyword is not requred since it is the global object</p>
+                    <h5>Examples (all are valid syntax)</h5>
+                    <ul>
+                        <li>Window.navigator VS navigator</li>
+                        <li>Window.screen VS screen</li>
+                        <li>Window.document VS document</li>
+                    </ul>
+                    <h3 class="text-center"> Some Javascript Methods</h3>
+                    <hr>
+                    <h4 class="text-center">Innertext VS InnerHTML</h4>
+                    <p class="lead">Innertext ignores markup and treats it as literal values while innerHTML will interpret any markup</p>
+                    <h4 class="text-center">Text Content</h4>
+                    <p class="lead">Interprets it as literal values</p>
+                    <h4 class="text-center">OuterHTML</h4>
+                    <p class="text-center">Includes the markup</p>
+                    <pre> OuterHTML = &ltp>Content&lt/p>
+ innerHTML = CONTENT</pre>
+                   <h4>Attributes in javascript</h4>
+                   <p>Attributes can also be set in Javascript</p>
+                   <pre>h.title = 'hello' or h['title']
+h.setAttribute(data-extra','value')
+ </pre><p>Styles can also be set</p>
+                   <pre>h.style.color='red'
+h.style.fontSize='2cm'</pre>
+                  <hr>
+                   <p class="text-center">*NOTE: values should be string and (-) dash is an invalid key character in javascript</p><hr>
+                    
+                
+                   
+                    
+                    
                 </div>
             </div>
         </div>
