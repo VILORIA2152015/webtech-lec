@@ -1,9 +1,8 @@
 Cascading Style Sheets (CSS)
-    If HTML is the one to use when creating the structure and the content of a web page, CSS or Cascading Style Sheet is the one who is responsible for the look or the design of the web page.
-
-
+    If HTML is the one to use when creating the structure and the content of a web page, Cascading Style Sheet is the one who is responsible for the look or the design of the web page.
 
 CSS Rule Precedence
+
 -by origin and importance
     -user agent important declaration
     -user important declaration
@@ -28,10 +27,21 @@ CSS Declarations
         font-size: 36px;
     }
 -properties
-    -short hand properties
-    -vendor specific extension - it used by the browsers to add support for some CSS features
-    (a.k.a vendor prefix e.g. -webkit- .....)
-    
+    -short hand properties - it is used to set the values of some CSS properties.
+        e.g
+            Font Properties
+            Background Properties
+            Margin and Padding Properties
+            
+    -vendor specific extension/vendor prefixes - it used by the browsers to add support for some CSS features
+        e.g
+            Android: -webkit-
+            Chrome: -webkit-
+            Firefox: -moz-
+            Internet Explorer: -ms-
+            iOS: -webkit-
+            Opera: -o-
+            Safari: -webkit-   
 -values
     -keywords
     -numbers
