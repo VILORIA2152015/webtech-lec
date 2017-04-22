@@ -116,7 +116,7 @@
                         <li><h4>User Agent Style</h4></li>
                         <p>default stylesheet in a browser</p>
                     </ul>
-                    <h2 >Some CSS At-Rules</h2>
+                    <h2>CSS At-Rules</h2>
                         <ul>
                     
                         <li><details>
@@ -188,47 +188,158 @@
                         </details></li>
 
                     </ul>
-                    <h2 >CSS Simple Selectors</h2>
+                    <h2 >Simple Selectors</h2>
                     <ul>
-                        <li><h4>Type Selector</h4></li>
-                        <li><h4>Universal Selector</h4></li>
-                        <li><h4>Attribute Selector (~)</h4></li>
-                        <li><h4>Class Selector (period with class name)</h4></li>
-                        <li><h4>ID Selector (#)</h4></li>
-                        <li><h4>pseudo-class</h4></li>
-                        - dynamic <ul>
-                                <li>link pseudo class (link, visited)</li>
-                                <li> user action pseudo class (:hover, :active, :focus)</li>
-                                </ul>
-                        - target <ul>
-                                <li>:target</li>
-                                </ul>
-                        - language <ul>
-                                <li>:lang()</li>
-                                </ul>
-                        - UI element states pseudo classes <ul>
-                                <li>:enabled</li>
-                                <li>:disabled</li>
-                                <li>:checked</li>
-                                <li>:indeterminate</li>
-                                </ul>
-                        - structural <ul>
-                                <li>:root</li>
-                                <li>:first-child</li>
-                                <li>:last-child</li>
-                                <li>:only-child</li>
-                                <li>:nth-child</li>
-                                <li>:nth-last-child</li>
-                                <li>:first-of-type</li>
-                                <li>:last-of-type</li>
-                                <li>:only-of-type</li>
-                                <li>:nth-of-type</li>
-                                <li>:nth-of-last-type</li>
-                                <li>:empty</li>
-                                </ul>
                         
+                        <li><details>
+                                <summary><h4></h4></summary>
+                                <p></p>
+                         </details></li>
+
+
+                        <li><details>
+                                <summary><h4>Type Selector (Element Selector)</h4></summary>
+                                <p>This selector is just a case-insensitive match between the selector name and a given HTML element name. This is the simplest way to target all elements of a given type.</p>
+                         </details></li>
+
+                         <li><details>
+                                <summary><h4>Class Selector</h4></summary>
+                                <p>The class selector consists of a dot, '.', followed by a class name. A class name is any value without spaces put within an HTML class attribute. It is up to you to choose a name for the class. It is also worth knowing that multiple elements in a document can have the same class value and a single element can have multiple class names separated by white space.</p>
+                         </details></li>
+
+                         <li><details>
+                                <summary><h4>ID Selector</h4></summary>
+                                <p>The ID selector consists of a hash/pound symbol (#), followed by the ID name of a given element. Any element can have a unique ID name set with the id attribute. It is up to you what name you choose for the ID. It's the most efficient way to select a single element.</p>
+                         </details></li>
+
+                         <li><details>
+                                <summary><h4>Universal Selector</h4></summary>
+                                <p>The universal selector (*) is the ultimate joker. It allows selecting all elements in a page. As it is rarely useful to apply a style to every element on a page, it is often used in combination with other selectors.</p>
+                         </details></li>
+
+                         <li><details>
+                                <summary><h4>Combinators</h4></summary>
+                                <p>In CSS, combinators allow you to combine multiple selectors together, which allows you to select elements inside other elements, or adjacent to other elements. The four available types are:
+                                
+                                <ul>
+                                    <li><b>The descendant selector (space)</b> <br>
+                                    - allows you to select an element nested somewhere inside another element (not necessarily a direct descendant; it could be a grandchild, for example)</li>
+                                    <li><b>The child selector ></b> <br>
+                                    - allows you to select an element that is an immediate child of another element.</li>
+                                    <li><b>The adjacent sibling selector +</b> <br>
+                                    - allows you to select an element that is an immediate sibling of another element (i.e. right next to it, at the same level in the hierarchy).</li>
+                                    <li><b>The general sibling selector ~</b> <br>
+                                    - allows you to select any elements that are siblings of another element (i.e. at the same level in the hierarchy, but not necessarily right next to it).</li>
+                                </ul>
+
+                                </p>
+                         </details></li>
                     </ul>
 
+                    <h2>Attribute Selectors</h2>
+                    <ul>
+                        <li><details>
+                                <summary><h4>Presence and value attribute selectors</h4></summary>
+                                <p>These attribute selectors try to match an exact attribute value:</p>
+                                <ul>
+                                    <li><b>[attr] :</b><br>
+                                    This selector will select all elements with the attribute attr, whatever its value.</li>
+                                    <li><b>[attr=val] :</b><br>
+                                    This selector will select all elements with the attribute attr, but only if its value is val.</li>
+                                    <li><b>[attr~=val] :</b><br>
+                                    This selector will select all elements with the attribute attr, but only if the value val is one of a space-separated list of values contained in attr's value, for example a single class in a space-separated list of classes.</li>
+                                </ul>
+                         </details></li>
+
+                         <li><details>
+                                <summary><h4>SUbstring value attribute selectors</h4></summary>
+                                <p>Attribute selectors in this class are also known as "RegExp-like selectors", because they offer flexible matching in a similar fashion to regular expression (but to be clear, these selectors are not true regular expression):</p>
+                                <ul>
+                                    <li><b>[attr|=val] :</b><br>
+                                    This selector will select all elements with the attribute attr for which the value is exactly val or starts with val- (careful, the dash here isn't a mistake, this is to handle language codes.)</li>
+                                    <li><b>[attr^=val] :</b><br>
+                                    This selector will select all elements with the attribute attr for which the value starts with val.</li>
+                                    <li><b>[attr$=val] :</b><br>
+                                    This selector will select all elements with the attribute attr for which the value ends with val.</li>
+                                    <li><b>[attr*=val] :</b><br>
+                                    This selector will select all elements with the attribute attr for which the value contains the string val (unlike [attr~=val], this selector doesn't treat spaces as value separators but as part of the attribute value.)
+                                    </li>
+                                </ul>
+                         </details></li>
+                    </ul>
+
+                        <h2>Pseudo-classes and Pseudo-elements</h2>
+                    <ul>                        
+                        <li><details>
+                        <summary><h3>Pseudo-classes</h3></summary>
+                        <p>A CSS pseudo-class is a keyword preceded by a colon (:) that is added on to the end of selectors to specify that you want to style the selected elements only when they are in certain state. For example you might want to style an element only when it is being hovered over by the mouse pointer, or a checkbox when it is disabled or checked, or an element that is the first child of its parent in the DOM tree.</p>
+                                
+                                <ul>     
+                                    <li><details>
+                                    <summary><h4>Dynamic</h4></summary>
+                                    <p></p>
+                                    <ul>
+                                            <li>link pseudo class (:link, v:isited)</li>
+                                            <li> user action pseudo class (:hover, :active, :focus)</li>
+                                    </ul>
+                                    </details></li>
+
+                                    <li><details>
+                                    <summary><h4>Target</h4></summary>
+                                    <ul>
+                                    <li>:target</li>
+                                    </ul>
+                                    </details></li>
+
+                                    <li><details>
+                                    <summary><h4>Language</h4></summary>
+                                    <ul>
+                                        <li>:lang()</li>
+                                    </ul>
+                                    </details></li>
+
+                                    <li><details>
+                                    <summary><h4>UI element states</h4></summary>
+                                    <ul>
+                                    <li>:enabled</li>
+                                    <li>:disabled</li>
+                                    <li>:checked</li>
+                                    <li>:indeterminate</li>
+                                    </ul>
+                                    </details></li>
+
+                                    <li><details>
+                                    <summary><h4>Structural</h4></summary>
+                                    <ul>
+                                    <li>:root</li>
+                                    <li>:first-child</li>
+                                    <li>:last-child</li>
+                                    <li>:only-child</li>
+                                    <li>:nth-child</li>
+                                    <li>:nth-last-child</li>
+                                    <li>:first-of-type</li>
+                                    <li>:last-of-type</li>
+                                    <li>:only-of-type</li>
+                                    <li>:nth-of-type</li>
+                                    <li>:nth-of-last-type</li>
+                                    <li>:empty</li>
+                                    </ul>
+                                    </details></li>
+                            </ul>
+                        </details></li>
+                        <li><details>
+                            <summary><h3>Pseudo-elements</h3></summary>
+                            <p>Pseudo-elements are very much like pseudo-classes, but they have differences. They are keywords — this time preceded by two colons (::) — that can be added to the end of selectors to select a certain part of an element.</p>
+                            <ul>
+                                <li>::after</li>
+                                <li>::before</li>
+                                <li>::first-letter</li>
+                                <li>::first-line</li>
+                                <li>::selection</li>
+                                <li>::backdrop</li>
+                            </ul>
+                        </details></li>      
+                    </ul>
                 </div>
             </div>
         </div>

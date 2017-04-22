@@ -266,11 +266,12 @@ ul li details summary::-webkit-details-marker{
     display:none;
 }
 
-ul li{
+h2 + ul > li{
     list-style: none;
 }
 
 summary{
+    cursor: pointer;
     transition: all; .2s ease-in-out;
     transition-delay: .1s;
 }
