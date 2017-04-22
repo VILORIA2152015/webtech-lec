@@ -181,9 +181,19 @@ h.style.fontSize='2cm'</pre>
                     <hr>
                     <p class="text-center">Arrays in javascript is a global object that is used in the construction of arrays which are list-like objects. It can hold more than one value at a time.</p>
                   <p>Declaring Arrays<p>
-                   <pre>var array = ['Carrot', 'Bell pepper'];
+                   <pre>var vegetable = ['Carrot', 'Bell pepper'];
 //can also be..
-var array = new Array('Carrot', 'Bell pepper');</pre>
+var vegetable = new Array('Carrot', 'Bell pepper');</pre>
+                  <p>Array length<p>
+                   <pre>var vegetable = ['Carrot', 'Bell pepper'];
+array.length; // the length of the array is 2, take note that the length of an array is always one more than the highest array index </pre>
+                  <p>Array Index<p>
+                   <pre>var vegetable = ['Carrot', 'Bell pepper', 'Squash', 'Broccoli'];
+vegetable[0]; // index in array starts at 0, so the first element 'Carrot' is at index 0.
+vegetable[1]; // index 1 is 'Bell pepper'
+vegetable[2]; // index 2 is 'Squash'
+vegetable[3]; // index 3 is 'Broccoli'</pre>
+
 
 
                    <p class="text-center">*NOTE: values should be string and (-) dash is an invalid key character in javascript</p><hr>
