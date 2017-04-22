@@ -261,3 +261,21 @@ footer p {
 #xx10:target{
     display:block;
 }
+
+ul li details summary::-webkit-details-marker{
+    display:none;
+}
+
+ul li{
+    list-style: none;
+}
+
+summary{
+    transition: all; .2s ease-in-out;
+    transition-delay: .1s;
+}
+
+summary:hover{
+    color: #00ace6;
+    transform: scale(0.99);
+}

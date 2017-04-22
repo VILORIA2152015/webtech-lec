@@ -117,14 +117,76 @@
                         <p>default stylesheet in a browser</p>
                     </ul>
                     <h2 >Some CSS At-Rules</h2>
-                    <ul>
-                        <li>@charset</li>
-                        <li>@import</li>
-                        <li>@document</li>
-                        <li>@font-face</li>
-                        <li>@key-frames</li>
-                        <li>@media</li>
-                        <li>@page</li>
+                        <ul>
+                    
+                        <li><details>
+                        <summary>@charset</summary>
+                        <p>Defines the character set used by the style sheet.</p>
+                        </details></li>
+                        
+
+                        <li><details>
+                        <summary>@import</summary>
+                        <p>Tells the CSS engine to include an external style sheet.</p>
+                        </details></li>
+
+                        <li><details>
+                        <summary>@namespace</summary>
+                        <p>Tells the CSS engine that all its content must be considered prefixed with an XML namespace.</p>
+                        </details></li>
+
+                        <li><details>
+                        <summary>Nested at-rules</summary>
+                        <p>Tells the CSS engine that all its content must be considered prefixed with an XML namespace.</p>
+                            <ul>
+
+                                <li><details>
+                                <summary>@document</summary>
+                                <p>A conditional group rule which will apply its content if the document in which the style sheet is applied meets the criteria of the given condition. (deferred to Level 4 of CSS Spec)</p>
+                                </details></li>
+
+                                <li><details>
+                                <summary>@supports</summary>
+                                <p>A conditional group rule which will apply its content if the browser meets the criteria of the given condition.</p>
+                                </details></li>
+
+                                <li><details>
+                                <summary>@font-face</summary>
+                                <p>Describes the aspect of an external font to be downloa</p>
+                                </details></li>
+
+                                <li><details>
+                                <summary>@key-frames</summary>
+                                <p>Describes the aspect of intermediate steps in a CSS animation sequence.</p>
+                                </details></li>
+
+                                <li><details>
+                                <summary>@media</summary>
+                                <p>A conditional group rule which will apply its content if the device meets the criteria of the condition defined using a media query.</p>
+                                </details></li>
+
+                                <li><details>
+                                <summary>@viewport</summary>
+                                <p>Describes the aspects of the viewport for small screen devices. (currently at the Working Draft stage)</p>
+                                </details></li>
+
+                                <li><details>
+                                <summary>@page</summary>
+                                <p>Describes the aspect of layout changes which will be applied when printing the document.</p>
+                                </details></li>
+
+                                <li><details>
+                                <summary>@counter-styles</summary>
+                                <p>Defines specific counter styles that are not part of the predefined set of styles. (at the Candidate Recommendation stage, but only implemented in Gecko as of writing)</p>
+                                </details></li>
+
+                                <li><details>
+                                <summary>@font-feature-values (plus @swash, @ornaments, @annotation, @stylistic, @styleset and @character-variant)</summary>
+                                <p>Define common names in font-variant-alternates for feature activated differently in OpenType. (at the Candidate Recommendation stage, but only implemented in Gekko as of writing)</p>
+                                </details></li>
+                            </ul>
+                        </details></li>
+
                     </ul>
                     <h2 >CSS Simple Selectors</h2>
                     <ul>
