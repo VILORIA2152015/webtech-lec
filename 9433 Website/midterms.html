@@ -489,6 +489,132 @@
                     </ul>
                     <h3 class="text-center"> Declaring Variables </h3>
                     <hr>
+
+
+                    <ul>
+                    <li><details>
+                        <summary><h4>JavaScript Identifiers</h4></summary>
+                        <p> These unique names are called identifiers. <br>
+
+                        Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume). <br>
+                        <br>
+                        
+                        The general rules for constructing names for variables (unique identifiers) are:
+                            <ul>
+                            <li>Names can contain letters, digits, underscores, and dollar signs.</li>
+                            <li>Names must begin with a letter</li>
+                            <li>Names can also begin with $ and _ (but we will not use it in this tutorial)</li>
+                            <li>Names are case sensitive (y and Y are different variables)</li>
+                            <li>Reserved words (like JavaScript keywords) cannot be used as names</li>
+                            </ul>
+                        
+
+                        </p>
+                    </detatils></li>
+
+                    <li>
+                        <details>
+                            <summary><h4>JavaScript Data Types</h4></summary>
+                            <p>JavaScript variables can hold numbers like 100 and text values like "John Doe".
+
+                            <br>In programming, text values are called text strings.
+
+                            <br>JavaScript can handle many types of data, but for now, just think of numbers and strings.
+
+                            <br>Strings are written inside double or single quotes. Numbers are written without quotes.
+
+                            <br>If you put a number in quotes, it will be treated as a text string.</p>
+
+                            <pre>   
+                            var pi = 3.14;
+                            var person = "John Doe";
+                            var answer = 'Yes I am!';</pre>
+                        </details>
+                    </li>
+
+                    <li>
+                        <details>
+                            <summary><h4>Declaring JavaScript Variables</h4></summary>
+                            <p>Creating a variable in JavaScript is called "declaring" a variable.
+
+                            <br>You declare a JavaScript variable with the var keyword:
+                            <pre>
+                            var carName;    
+                            </pre>
+
+                            <br>After the declaration, the variable has no value. (Technically it has the value of undefined)
+
+                            <br>To assign a value to the variable, use the equal sign:
+                            <pre>
+                            carName = "Volvo";          
+                            </pre>
+
+                            <br>You can also assign a value to the variable when you declare it:
+                            <pre>
+                            var carName = "Volvo";
+                            </pre>
+                            </p>
+                        </details>
+                    </li>
+
+                    <li>
+                        <details>
+                            <summary><h4>One Statement, Many Variables</h4></summary>
+                            <p>You can declare many variables in one statement.
+
+                            <br>Start the statement with var and separate the variables by comma:</p>
+                            <pre>
+                            var person = "John Doe", carName = "Volvo", price = 200;
+                            </pre>
+                            <p>A declaration can span multiple lines:</p>
+                            <pre>
+                            var person = "John Doe",
+                            carName = "Volvo",
+                            price = 200;
+                            </pre>
+                        </details>
+                    </li>
+
+                    <li>
+                        <details>
+                            <summary><h4>Value = undefined</h4></summary>
+                            <p>In computer programs, variables are often declared without a value. The value can be something that has to be calculated, or something that will be provided later, like user input.
+
+                            <br>A variable declared without a value will have the value undefined.
+
+                            <br>The variable carName will have the value undefined after the execution of this statement:</p>
+                            <pre>
+                            var carName;
+                            </pre>
+                        </details>
+                    </li>
+
+                    <li>
+                        <details>
+                            <summary><h4>JavaScript Arithmetic</h4></summary>
+                            <ul>
+                                <li><p>As with algebra, you can do arithmetic with JavaScript variables, using operators like = and +:</p>
+                                <pre>
+                                var x = 5 + 2 + 3;
+                                </pre></li>
+
+                                <li><p>You can also add strings, but strings will be concatenated:</p>
+                                <pre>
+                                var x = "John" + " " + "Doe";   
+                                </pre></li>
+                                
+                                <li><p>If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated.</p>
+                                <pre>
+                                var x = 2 + 3 + "5";
+                                </pre></li>
+                                
+                            </ul>
+                        </details>
+                    </li>
+
+
+                    </ul>
+                    <br>
                     <p class="lead">var - the scope of its current execution context which is either the enclosing function or for variables declared global.</p>
                     <p class="lead">let - a variable that is not associated in global and available only for a specific block.</p>
                     <p class="lead">const - similar to let, but can't be reassign on a different value.</p>
