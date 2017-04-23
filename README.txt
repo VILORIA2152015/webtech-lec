@@ -1,5 +1,6 @@
 This website is about Web Systems and Technologies.
-To have the full experience of the website you need to connect to the internet.
+To have the full experience of the website it's advisable for you to connect to 
+the internet.
 
 #############################################################
 
@@ -25,6 +26,8 @@ index.html - the homepage of the website.
 
 prelims.html - the page that contains all the prelim topics.
 
+midtrms.html - the page that contains all the prelim topic
+
 #############################################################
 
  To access the course website double-click on the index.html to view the 
@@ -34,6 +37,9 @@ section doesn't have any description.
 
  To view the prelim page you can either click "PRELIMS" on the navbar or click
 "Start Lesson" inline with the brief description of the prelim topics.
+  
+ To view the midterm page you can either click "MIDTERMS" on the navbar or click
+"Start Lesson" inline with the brief description of the midterm topics. 
+  
 
-  *The midterms and finals button on the navbar, currenty doesn't have any
-functionality.
+  *The finals button on the navbar, currenty doesn't have any functionality.
