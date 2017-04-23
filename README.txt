@@ -26,7 +26,7 @@ index.html - the homepage of the website.
 
 prelims.html - the page that contains all the prelim topics.
 
-midtrms.html - the page that contains all the prelim topic
+midterms.html - the page that contains all the prelim topic
 
 #############################################################
 
@@ -37,9 +37,51 @@ section doesn't have any description.
 
  To view the prelim page you can either click "PRELIMS" on the navbar or click
 "Start Lesson" inline with the brief description of the prelim topics.
+
+  PRELIM TOPICS:
+    >World Wide Web
+      -History   
+      -World Wide Web vs Internet
+    >Hypertext Transfer Protocol (HTTP)
+      -Description
+      -HTTP Versions
+      -HTTP Addressing 
+      -Client Server Communication
+      -HTTP Message Header Fields
+      -HTTP Message ("Client")
+      -HTTP Response Message ("Server")
+      -HTTP Standard Methods
+      -HTTP Extension Methods
+      -Status Codes
+    
   
  To view the midterm page you can either click "MIDTERMS" on the navbar or click
 "Start Lesson" inline with the brief description of the midterm topics. 
   
+  MIDTERM TOPICS:
+    >Hypertext Markup Language (HTML)
+      -History
+      -HTML Versions
+      -HTML Syntax and Terminologies
+    >Cascading Style Sheet (CSS)
+      -CSS Versions
+      -HTML/XHTM Stylesheets
+      -Css At-Rules
+      -CSS Rule Precedence
+      -CSS Declarations
+      -Simple Selectors
+      -Attribute Selectors
+      -Pseudo-Classes and Pseudo-Elements
+    >Client Side Scripting (JavaScript)
+      -ECMA 2612
+      -Linking JavaScript to HTML in 3 Ways
+      -How it works/How it get executed
+      -Attributes
+      -Environment
+      -Declaring Variables
+      -Scripting Attributes
+      -Some JavaScript Methods
+      -JavaScript Arrays
+      
 
   *The finals button on the navbar, currenty doesn't have any functionality.
