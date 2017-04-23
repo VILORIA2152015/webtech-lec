@@ -489,8 +489,6 @@
                     </ul>
                     <h3 class="text-center"> Declaring Variables </h3>
                     <hr>
-
-
                     <ul>
                     <li><details>
                         <summary><h4>JavaScript Identifiers</h4></summary>
@@ -514,7 +512,7 @@
 
                     <li>
                         <details>
-                            <summary><h4>JavaScript Data Types</h4></summary>
+                            <summary><h4>JavaScript Data Types</h4></summary
                             <p>JavaScript variables can hold numbers like 100 and text values like "John Doe".
 
                             <br>In programming, text values are called text strings.
@@ -614,11 +612,145 @@
 
 
                     </ul>
-                    <br>
+
+                    
                     <p class="lead">var - the scope of its current execution context which is either the enclosing function or for variables declared global.</p>
                     <p class="lead">let - a variable that is not associated in global and available only for a specific block.</p>
                     <p class="lead">const - similar to let, but can't be reassign on a different value.</p>
 
+                    <h3 class="text-center">Scripting Attributes</h3>
+                    <hr>
+                        <ul>
+                            <li>
+                                <details>
+                                    <summary><h4>Global Attributes</h4></summary>
+                                    <p>Not valid in base, head, html, meta, param, script, style, and title elements.</p>
+                                
+                                    <table class="table table-bordered">
+                                        <tbody><tr>
+                                            <th style="width:100px">Attribute</th>
+                                            <th style="width:100px">HTML-5</th>
+                                            <th>Description</th>
+                                            </tr>
+                                            <tr>
+                                                <td>accesskey</td>
+                                                <td>&nbsp;</td>
+                                                <td>Specifies a shortcut key for an element to be used in place of keyboard.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>class</td>
+                                                <td>&nbsp;</td>
+                                                <td>The class of the element</td>
+                                            </tr>
+                                            <tr>
+                                                <td>contenteditable</td>
+                                                <td>Yes</td>
+                                                <td>Specify whether the element is editable or not.</td>
+                                            </tr>
+                                                <tr>
+                                                <td>contextmenu</td>
+                                                <td>Yes</td>
+                                                <td>Specifies a context menu for an element.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>data-*</td>
+                                                <td>Yes</td>
+                                                <td>Used to store custom data associated with the element.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>draggable</td>
+                                                <td>Yes</td>
+                                                <td>Boolean attribute to specify whether the element can be dragged or not.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>dropzone</td>
+                                                <td>Yes</td>
+                                                <td>Specifies whether the dragged data is copied, moved, or linked, when dropped.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>hidden</td>
+                                                <td>Yes</td>
+                                                <td>Specifies whether element should be visible or not.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>id</td>
+                                                <td>&nbsp;</td>
+                                                <td>A unique id for the element</td>
+                                            </tr>
+                                            <tr>
+                                                <td>spellcheck</td>
+                                                <td>Yes</td>
+                                                <td>Specifies if the element must have it's spelling or grammar checked.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>style</td>
+                                                <td>&nbsp;</td>
+                                                <td>An inline style definition</td>
+                                            </tr>
+                                            <tr>
+                                                <td>tabindex</td>
+                                                <td>&nbsp;</td>
+                                                <td>Specifies the tab order of an element.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>title</td>
+                                                <td>&nbsp;</td>
+                                                <td>A text to display in a tool tip</td>
+                                            </tr>
+                                            <tr>
+                                                <td>translate</td>
+                                                <td>Yes</td>
+                                                <td>Boolean attribute specifies whether the content of an element should be translated or not</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>        
+                                </details>
+                            </li>
+
+                            <li>
+                                <details>
+                                    <summary><h4>Specific Attribute</h4></summary>
+                                    <p>The HTML script tag also supports following additional attributes: </p>
+
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width:20%">Attribute</th>
+                                                <th style="width:20%">Value</th>
+                                                <th>Description</th>
+                                            </tr>
+                                            <tr><td>async (html5)</td>
+                                                <td>sync</td>
+                                                <td>Specifies that the script is executed asynchronously.</td></tr>
+                                            <tr><td>charset </td>
+                                                <td>charset</td>
+                                                <td>Defines the character encoding that the script uses. </td></tr>
+                                            <tr><td>defer </td>
+                                                <td>defer</td>
+                                                <td>Declares that the script will not generate any content. Therefore, the browser/user agent can continue parsing and rendering the rest of the page. </td></tr>
+                                            <tr><td>src </td>
+                                                <td>URL</td>
+                                                <td>Specifies a URI/URL of an external script. </td></tr>
+                                            <tr><td>type </td>
+                                                <td>text/javascript<br>application/ecmascript<br>application/javascript<br>text/vbscript</td>
+                                                <td>Specifies the scripting language as a content-type (MIME type). </td></tr>
+                                            <tr><td>xml:space </td>
+                                                <td>preserve</td>
+                                                <td><i>Deprecated</i>- Whether the whitespace in code should be preserved</td></tr>
+                                        </tbody>            
+                                    </table>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary><h4>Event Attributes</h4></summary>
+                                    <p>When users visit your website, they do things like click various links, bring mouse over text and images etc. These are examples of what we call events in Javascript and VBScript terminologies.</p>
+
+                                    <p>We can write our event handlers using Javascript or VBScript and can specify some actions to be taken against these events. Though these are the events but they will be specified as attributes for the HTML tags.</p>
+                                </details>
+                            </li>
+                        </ul>
+    
                     <h3 class="text-center"> Some Javascript Methods</h3>
                     <hr>
                     <h4 class="text-center">Innertext VS InnerHTML</h4>
