@@ -308,6 +308,17 @@
 &lt;?php
     code here..
 ?></pre>
+                                     <h4> Session Handling </h4>
+                   <pre>We start session by the method sesion_start(): &lt;?php
+    if (isset($_POST['username'])) {
+        session_start(); // starting a session
+        $_SESSION['username'] = $_POST['username']; // creating a new session for the newly logged in user
+    }
+
+    if (!empty($_SESSION['username'])) {
+        header("Location: index.html"); // if the session of the user exists, redirect to index.html.
+    }
+?></pre>
 
                 </div>
             </div>
