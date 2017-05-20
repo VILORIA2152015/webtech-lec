@@ -329,6 +329,17 @@ if(isset($_SESSION['username'])){
     header("Location: login.php");
 }
 ?></pre>
+                                     <h4> Fetching a text input </h4>
+                   <pre>
+&lt;form method="POST"&gt;
+&lt;input type="text" name"sampleText"&gt;
+&lt;/form&gt;
+&lt;?php
+if(isset($_POST['sampleText'])){
+    $sample = $_POST['sampleText'];
+    echo $sample; // displaying the text input of the user
+}
+?></pre>
 
                 </div>
             </div>
