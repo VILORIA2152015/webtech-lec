@@ -64,15 +64,8 @@
         </div>
     </nav>
 
-    
-     <div class="container">
-        <div class="row">
-            <div class="box">
-                <div class="col-lg-12">
-                </div>
-            </div>
-        </div>
-    <div class="container">
+
+
 
     <div class="container">
         <div class="row">
@@ -80,7 +73,7 @@
                 <div class="col-lg-12">
                     <h1 class="text-center">Server-Side Scripting</h1>
 
-                    <p>Server-side scripting is a method of designing websites so that the process or user request is run on the originating server. Server-side scripts provide an interface to the user and are used to limit access to proprietary data and help keep control of the script source code.</p>
+                    <p>Server-side scripting is a method of designing websites so that the process or user request is run on the originating server. Server-side scripts provide an interface to the user and are used to limit access to proprietary data and help keep control of the script source code. Server side scripting is removing the limits in the sandbox environment</p>
 
                     <h2>Server-side Sripting Language</h2>
                     <div>
@@ -108,42 +101,68 @@
                 </div>
             </div>
         </div>
-    <div class="container">
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <h1 class="text-center">MVC</h1>
+
+                    <p>MVC or Model View Control is an Architectural Pattern. It makes maintenance and design easier</p>
+                       <ul>
+                           <li>M - Model - Data</li>
+                           <li>V - View - Presentation</li>
+                           <li>C - Controller - Coordination</li>
+                       </ul>
+                        </div>
+                    </div>
+
+                </div>
+
 
         <div class="row">
             <div class="box">
                 <div class="col-lg-12">
                     <h1 class="text-center">Servlet</h1>
-                    
+
                     <p>Java Object based on the Servlet API</p>
-                    
+
                     <p>Runs in a server application to answer client requests; technically, servlets are not tied to a specific client-server protocol, but they are most commonly used with HTTP and the term „servlet‟ is often used in the context of an “HTTP Servlet”</p>
-                    
+
                     <p>Web-tier components in the Java EE architecture.</p>
-                    
+
                     <p>Runs in, and is managed by, a web-tier container called the „Servlet Container‟</p>
 
                     <p>Mapped to URLs to which clients send requests</p>
 
                     <div>
-                    <h2>Servlet Processing</h2>
-                    <div>
-                    <ul>
-                        <li><p>Client sends a request to a web server URL that is mapped to a servlet. Web server passes on the request to the servlet container.</p></li>
-                        <li><p>Servlet container checks if servlet is already loaded.</p></li>
-                        <li><p>If it is not yet loaded, servlet container loads the servlet class and instantiates the servlet, and calls its init method.</p></li>
-                        <li><p>Servlet container invokes the servlet‟s service method, passing request and response objects as arguments.</p></li>
-                       <li><p>Servlet processes the request using the response object to create the response, which is returned by the servlet container to the web server, which in turn sends the response to the client</p></li>
-                        <li><p>Subsequent request to the servlet will not require servlet re-instantiation, unless the servlet has been unloaded; before a servlet is unloaded, the servlet container invokes its destroy method.</p></li>
-                    </ul>
-                    </div>
+                        <h2>Servlet Processing</h2>
+                        <div>
+                            <ul>
+                                <li>
+                                    <p>Client sends a request to a web server URL that is mapped to a servlet. Web server passes on the request to the servlet container.</p>
+                                </li>
+                                <li>
+                                    <p>Servlet container checks if servlet is already loaded.</p>
+                                </li>
+                                <li>
+                                    <p>If it is not yet loaded, servlet container loads the servlet class and instantiates the servlet, and calls its init method.</p>
+                                </li>
+                                <li>
+                                    <p>Servlet container invokes the servlet‟s service method, passing request and response objects as arguments.</p>
+                                </li>
+                                <li>
+                                    <p>Servlet processes the request using the response object to create the response, which is returned by the servlet container to the web server, which in turn sends the response to the client</p>
+                                </li>
+                                <li>
+                                    <p>Subsequent request to the servlet will not require servlet re-instantiation, unless the servlet has been unloaded; before a servlet is unloaded, the servlet container invokes its destroy method.</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
                 </div>
             </div>
         </div>
 
-        <div class="container">
         <div class="row">
             <div class="box">
                 <div class="col-lg-12">
@@ -157,23 +176,32 @@
                     <ul>
                         <li>
                             <details>
-                                <summary><p>Scriptlet Scriptlet</p></summary>
+                                <summary>
+                                    <p>Scriptlet Scriptlet</p>
+                                </summary>
                                 <p>int i = 0;</p>
-                                <p>for (; 1 < 5; i++) {</p>
-                                <p>out.println("hello!");</p>
-                                <p>}</p>
-                                    
+                                <p>for (; 1
+                                    < 5; i++) {</p>
+                                        <p>out.println("hello!");</p>
+                                        <p>}</p>
+
                             </details>
                         </li>
                         <li>
                             <details>
-                                <summary><p>Scriptlet Expression</p></summary>
-                                <p>Today is <%= (new Date()).toString()%></p>
+                                <summary>
+                                    <p>Scriptlet Expression</p>
+                                </summary>
+                                <p>Today is
+                                    <%= (new Date()).toString()%>
+                                </p>
                             </details>
                         </li>
                         <li>
                             <details>
-                                <summary><p>Scriptlet Declaration</p></summary>
+                                <summary>
+                                    <p>Scriptlet Declaration</p>
+                                </summary>
                                 <p>private int z;</p>
                                 <p>public void someMethod() {</p>
                                 <p>//Method goes here</p>
@@ -184,7 +212,6 @@
                 </div>
             </div>
         </div>
-            <div class="container">
         <div class="row">
             <div class="box">
                 <div class="col-lg-12">
@@ -199,76 +226,94 @@
                     <ul>
                         <li>
                             <details>
-                                <summary><p>$GLOBALS</p></summary>
+                                <summary>
+                                    <p>$GLOBALS</p>
+                                </summary>
                                 <p>is a PHP super global variable which is used to access global variables from anywhere in the PHP script (also from within functions or methods).</p>
                             </details>
                         </li>
                         <li>
                             <details>
-                                <summary><p>$_SERVER</p></summary>
+                                <summary>
+                                    <p>$_SERVER</p>
+                                </summary>
                                 <p>is a PHP super global variable which holds information about headers, paths, and script locations.</p>
                             </details>
                         </li>
                         <li>
                             <details>
-                                <summary><p>$_GET</p></summary>
+                                <summary>
+                                    <p>$_GET</p>
+                                </summary>
                                 <p>can also be used to collect form data after submitting an HTML form with method="get".</p>
                                 <p>can also collect data sent in the URL.</p>
                             </details>
                         </li>
                         <li>
                             <details>
-                                <summary><p>$_POST</p></summary>
+                                <summary>
+                                    <p>$_POST</p>
+                                </summary>
                                 <p>is widely used to collect form data after submitting an HTML form with method="post". $_POST is also widely used to pass variables.</p>
                             </details>
                         </li>
 
                         <li>
                             <details>
-                                <summary><p>$_REQUEST</p></summary>
+                                <summary>
+                                    <p>$_REQUEST</p>
+                                </summary>
                                 <p>is used to collect data after submitting an HTML form.</p>
                             </details>
                         </li>
 
                         <li>
                             <details>
-                                <summary><p>$_ENV</p></summary>
+                                <summary>
+                                    <p>$_ENV</p>
+                                </summary>
                                 <p>An associative array of variables passed to the current script via the environment method.</p>
                             </details>
                         </li>
                         <li>
                             <details>
-                                <summary><p>$_FILES</p></summary>
+                                <summary>
+                                    <p>$_FILES</p>
+                                </summary>
                                 <p>An associative array of items uploaded to the current script</p>
                             </details>
                         </li>
                         <li>
                             <details>
-                                <summary><p>$_SESSION</p></summary>
+                                <summary>
+                                    <p>$_SESSION</p>
+                                </summary>
                                 <p>An associative array containing session variables available to the current script.</p>
                             </details>
                         </li>
                         <li>
                             <details>
-                                <summary><p>$_COOKIE</p></summary>
+                                <summary>
+                                    <p>$_COOKIE</p>
+                                </summary>
                                 <p>An associative array of variables passed to the current script via HTTP Cookies.</p>
                             </details>
                         </li>
-    
+
 
                     </ul>
                 </div>
             </div>
         </div>
-    
-            </div>
-        </div>
-        </div>
-        </div>
-         </div>
+
     </div>
-    </body>
-    
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+
 
 <footer>
     <div class="container">
